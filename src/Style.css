@@ -1,0 +1,144 @@
+.nav-bar {
+  position: relative;
+  height: 2em;
+  background: #000;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.nav-bar .user-name {
+  padding-right: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .main-container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-container {
+    flex-wrap: wrap;
+  }
+}
+.main-container .hidden {
+  display: none;
+}
+.main-container .filter-container {
+  height: 100%;
+  min-width: 250px;
+  border-right: 1px solid #afa9a9;
+  min-height: 500px;
+  padding: 20px 40px;
+}
+.main-container .filter-container .filter-name {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.main-container .filter-container .country-filters {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.main-container .filter-container .city-filters {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.main-container .filter-container .label-filter {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+}
+.main-container .filter-container .clear {
+  float: right;
+  font-weight: 300;
+  color: #9a9696;
+  font-size: 12px;
+}
+.main-container .property-container {
+  flex-grow: 0;
+  padding: 20px 40px;
+}
+.main-container .property-container .property-list {
+  max-height: 750px;
+  overflow-y: auto;
+  padding: 0 30px;
+}
+.main-container .property-container .property-list .city-name {
+  font-size: 14px;
+  color: #908989;
+}
+.main-container .property-container .property-list .street-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.main-container .property-container .property-list .img-container {
+  margin-top: 5px;
+}
+.main-container .property-container .property-list .img-container:hover {
+  opacity: 0.7;
+}
+.main-container .property-container .property-list img {
+  height: auto;
+  width: 350px;
+}
+.main-container .property-container .img-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 225px;
+}
+.main-container .property-container .button-container {
+  bottom: 0;
+  display: inline-block;
+  margin-top: 3em;
+  padding: 40px;
+}
+.main-container .property-container .btn {
+  padding: 15px 10px;
+  background-color: cadetblue;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+.main-container .property-container .btn:hover {
+  cursor: pointer;
+}
+.main-container .property-container .clear:hover {
+  cursor: pointer;
+}
+.main-container .property-container .form-input {
+  height: 34px;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main-container .detail-container {
+  flex-grow: 2;
+  padding: 20px 40px;
+}
+.main-container .detail-container .property-detail {
+  padding: 20px 40px;
+}
+.main-container .detail-container .property-detail .property-name {
+  font-size: 36px;
+}
+.main-container .detail-container .property-detail .property-img {
+  margin-top: 10px;
+}
+.main-container .detail-container .property-detail .property-img img {
+  width: 650px;
+}
